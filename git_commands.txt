@@ -1,0 +1,30 @@
+Working Directory → Staging Area → Commit → Remote Repo
+
+You edit files → they are in your working directory
+You run git add → files move to the staging area
+You run git commit → staged files are permanently saved in Git histoy
+
+# BASIC COMMANDS
+1. git add → Stages your changed files so they’re ready to be committed.
+2. git commit -m "comment" → Saves your staged changes with a message describing what you did.
+3. git push → Uploads your committed changes to the remote repository (GitHub, etc.).
+
+4. git status → Shows the current state of your files (modified, staged, untracked).
+5. git log → Shows the commit history with commit IDs, messages, and authors.
+git clone → is used to copy (download) an entire Git repository from any git server
+
+# UNDO UNCOMMITED CHANGES
+git restore <file> → Discards changes in that specific file and restores it to the last committed version
+git restore . → Discards all uncommitted changes in your working directory.
+
+# UNDO COMMITED CHANGES
+git revert <commitID> → Creates a new commit that reverses the changes made in the specified commit (safe undo).
+git revert -n <commitID> → Reverts the commit but does not auto-commit
+
+git reset --hard → forcefully discards all local changes and returns your code to the last committed state.
+
+#BRANCHING
+1. main is a default branch in your code
+ git branch
+ git checkout <branchname>
+ 

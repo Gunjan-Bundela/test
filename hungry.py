@@ -7,4 +7,8 @@ if(hungry=='yes'):
    
 
 else:
-    print("Do your homework")
+    thirsty=input("are you thirsty?")
+    if(thirsty=='yes'):
+        print("drink water")
+        print("drink water")
+  
